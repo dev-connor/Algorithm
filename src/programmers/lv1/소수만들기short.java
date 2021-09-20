@@ -1,22 +1,14 @@
 package programmers.lv1;
 
-import java.util.HashMap;
-
-class 소수만들기 {
+class 소수만들기short {
 	public int solution(int[] nums) {
-		HashMap<Integer, Boolean> primes = new HashMap<>();
 		int count = 0;
 
 		for (int i = 0; i < nums.length - 2; i++) {
 			for (int j = i + 1; j < nums.length - 1; j++) {
 				for (int k = j + 1; k < nums.length; k++) {
 					int sum = nums[i] + nums[j] + nums[k];
-					
-					if (primes.containsKey(sum)) count += primes.get(sum) ? 1 : 0;
-					else if (isPrime(sum)) {
-						count++;
-						primes.put(sum, true);
-					} else primes.put(sum, false);
+					if (isPrime(sum)) count++;
 				}
 			}
 		}
