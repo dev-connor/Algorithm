@@ -3,7 +3,6 @@ package programmers.lv1;
 public class 상호평가_2주차 {
     public String solution(int[][] scores) {
         String answer = "";
-        double avg;
         
         for (int i = 0; i < scores.length; i++) {
         	int sum = 0;
@@ -19,7 +18,7 @@ public class 상호평가_2주차 {
         			if (max < score) max = score;
         		}
 			}
-        	avg = selfRating(scores[i][i], max, min) ? (double) sum / scores.length :
+        	double avg = selfRating(scores[i][i], max, min) ? (double) sum / scores.length :
         		(double) (sum - scores[i][i]) / (scores.length - 1);
         	answer += getGrade(avg);
 		}
