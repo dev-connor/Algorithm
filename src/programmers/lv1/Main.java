@@ -2,12 +2,13 @@ package programmers.lv1;
 
 public class Main {
 	public static void main(String[] args) {
-		다트게임_1차 s = new 다트게임_1차();
+		소수만들기 s = new 소수만들기();
 //		int[] d = {1, 3, 2, 5, 4};
 //		int budget = 9;
 //		System.out.println(s.solution(d, budget));
 		String str = "1D2S#10S";
-		System.out.println(s.solution(str));
+		int[] nums = {1,2,7,6,4};
+		System.out.println(s.solution(nums));
 		
 	}
 }
