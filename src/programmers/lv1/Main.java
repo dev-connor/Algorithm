@@ -2,10 +2,9 @@ package programmers.lv1;
 
 public class Main {
 	public static void main(String[] args) {
-		두정수사이의합 s = new 두정수사이의합();
-		String str = "1234";
-		int n = 10;
-		System.out.println(s.solution(5,3));
+		최소직사각형_8주차 s = new 최소직사각형_8주차();
+		int[][] sizes = {{60, 50}, {30, 70}, {60, 30}, {80, 40}};
+		System.out.println(s.solution(sizes));
 		
 	}
 }
