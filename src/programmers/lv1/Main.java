@@ -1,10 +1,12 @@
 package programmers.lv1;
 
+import java.util.Arrays;
+
 public class Main {
 	public static void main(String[] args) {
-		최소직사각형_8주차 s = new 최소직사각형_8주차();
-		int[][] sizes = {{60, 50}, {30, 70}, {60, 30}, {80, 40}};
-		System.out.println(s.solution(sizes));
+		같은숫자는싫어 s = new 같은숫자는싫어();
+		int[] arr = {7, 1, 3, 3, 0, 1, 8};
+		System.out.println(Arrays.toString(s.solution(arr)));
 		
 	}
 }
