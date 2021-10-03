@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-class Solution {
+public class 최대수입스케줄 {
 	int solution(int n, int[][] arr) {
 		Arrays.sort(arr, (o1, o2) -> o2[1] - o1[1]);
 		int max = arr[0][1];
