@@ -2,18 +2,12 @@ package programmers.javakit;
 
 public class Main {
 	public static void main(String[] args) {
-		소수찾기 s = new 소수찾기();
+		기능개발 s = new 기능개발();
 		String numbers = "113";
 		
-		System.out.println(s.solution(numbers));
-		
-
-		double b = 24;
-		double y = 24;
-		double r = (-1 * (-b/2 + 2) + Math.sqrt(Math.pow(-b/2 + 2, 2) - 4 * y)) / 2;
-		double r2 = (-1 * (-b/2 + 2) - Math.sqrt(Math.pow(-b/2 + 2, 2) - 4 * y)) / 2;
-		System.out.println(r);
-		System.out.println(r2);
+		int[] p = {95, 90, 99, 99, 80, 99};
+		int[] ss = {1, 1, 1, 1, 1, 1};
+		System.out.println(s.solution(p, ss));
 	}
 	
 
