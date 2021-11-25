@@ -1,8 +1,5 @@
 package programmers.javakit;
 
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 
 public class 소수찾기 {
