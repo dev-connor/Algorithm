@@ -1,13 +1,16 @@
 package programmers.javakit;
 
+import java.util.Arrays;
+
 public class Main {
 	public static void main(String[] args) {
-		프린터 s = new 프린터();
-		String numbers = "113";
+		주식가격 s = new 주식가격();
 		
-		int[] p = {1, 1, 9, 1, 1, 1};
-		int l = 0;
-		System.out.println(s.solution(p, l));
+		int[] arr = {1, 2, 3, 2, 3};
+		int[] arr2 = {4, 3, 1, 1, 0};
+		
+		
+		System.out.println(Arrays.toString(s.solution(arr)));
 	}
 	
 
