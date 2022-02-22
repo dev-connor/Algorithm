@@ -15,10 +15,10 @@ import java.util.stream.Stream;
 
 public class Main {
 	public static void main(String[] args) {
-		타켓넘버 s = new 타켓넘버();
-		int[] arr = {4, 1, 2, 1};
+		전화번호_목록 s = new 전화번호_목록();
+		String[] arr = {"12","123","1235","567","88"};
 		
-		System.out.println(s.solution(arr, 4));
+		System.out.println(s.solution(arr));
 		
 	}
 }
