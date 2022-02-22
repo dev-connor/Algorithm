@@ -15,10 +15,11 @@ import java.util.stream.Stream;
 
 public class Main {
 	public static void main(String[] args) {
-		전화번호_목록 s = new 전화번호_목록();
+		위장 s = new 위장();
 		String[] arr = {"12","123","1235","567","88"};
+		String[][] arr2 = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
 		
-		System.out.println(s.solution(arr));
+		System.out.println(s.solution(arr2));
 		
 	}
 }
