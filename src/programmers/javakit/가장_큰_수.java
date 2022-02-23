@@ -1,21 +1,13 @@
-package programmers.javakit;
-
 import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class 가장_큰_수 {
+	String answer = "";
+	
     public String solution(int[] numbers) {
-        StringBuilder str = new StringBuilder();
-        
-        for (int i : numbers) 
-			str.append(i);
-        
-        int[] sorted = str.chars().sorted().map(i -> i-'0').toArray();
-        str.setLength(0);
-        
-        for (int i = sorted.length - 1; i >= 0; i--) 
-        	str.append(sorted[i]);
-        	
-        return str.toString();
-    }
+    	String[] arr = Arrays.stream(numbers).mapToObj(String::valueOf).toArray(String[]::new);
+    	Arrays.sort(arr, (a, b) -> (b + a).compareTo(a + b));
+    	Stream.of(arr).forEach(s -> answer += s);
+    	return answer.charAt(0) == '0' ? "0" : answer;
+	}
 }
