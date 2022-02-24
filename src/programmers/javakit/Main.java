@@ -15,11 +15,11 @@ import java.util.stream.Stream;
 
 public class Main {
 	public static void main(String[] args) {
-		H_Index s = new H_Index();
-		int[] arr = {3, 0, 6, 1, 5};
+		더_맵게 s = new 더_맵게();
+		int[] arr = {1, 2, 3, 9, 10, 12};
 		String[][] arr2 = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
 		
-		System.out.println(s.solution(arr));
+		System.out.println(s.solution(arr, 7));
 		
 	}
 }
