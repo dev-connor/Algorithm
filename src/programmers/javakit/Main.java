@@ -15,8 +15,8 @@ import java.util.stream.Stream;
 
 public class Main {
 	public static void main(String[] args) {
-		가장_큰_수 s = new 가장_큰_수();
-		int[] arr = {0, 0};
+		H_Index s = new H_Index();
+		int[] arr = {3, 0, 6, 1, 5};
 		String[][] arr2 = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
 		
 		System.out.println(s.solution(arr));
