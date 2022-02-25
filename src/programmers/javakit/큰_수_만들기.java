@@ -5,14 +5,14 @@ public class 큰_수_만들기 {
 	
     public String solution(String number, int k) {
     	this.number = number;
-        int max = -1;
+        int maxIdx = -1;
         int digit = number.length() - k;
         int i = 0;
         StringBuilder answer = new StringBuilder();
         
         while (answer.length() < digit) {
-        	max = findMax(max + 1, k + i++);
-        	answer.append(number.charAt(max));
+        	maxIdx = findMax(maxIdx + 1, k + i++);
+        	answer.append(number.charAt(maxIdx));
         }
         return new String(answer);
     }
