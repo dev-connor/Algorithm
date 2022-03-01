@@ -1,13 +1,17 @@
 package programmers.lv2;
 
+import java.util.LinkedList;
+import java.util.Objects;
+import java.util.Queue;
+
 public class Main {
 	public static void main(String[] args) {
-		피보나치_수 s = new 피보나치_수();
+		게임_맵_최단거리 s = new 게임_맵_최단거리();
 		
-		System.out.println(s.solution(100000));
+		int[][] arr1 = {{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,1},{0,0,0,0,1}};
+		int[][] arr2 = {{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,0},{0,0,0,0,1}};
+		System.out.println(s.solution(arr2));
 		
 	}
-	
-	
-
 }
+
