@@ -1,12 +1,14 @@
 package programmers.lv1;
 
+import java.util.Arrays;
+
 public class Main {
 	public static void main(String[] args) {
-		시저암호 s = new 시저암호();
+		나누어_떨어지는_숫자_배열 s = new 나누어_떨어지는_숫자_배열();
 		
-		int[] arr = {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
+		int[] arr = {5, 9, 7, 10};
 		
-		System.out.println(s.solution("ABz", 1));
+		System.out.println(Arrays.toString(s.solution(arr, 5)));
 		
 		
 		
