@@ -1,5 +1,7 @@
+# 단순 DFS 로 풀었지만, 백트래킹으로 풀 수 있음
 def solution(numbers, target):
     visited = [False] * len(numbers)
+
     def dfs(count, sum, answer):
         if count == len(numbers):
             if sum == target:
