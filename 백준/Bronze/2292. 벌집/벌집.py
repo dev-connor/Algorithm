@@ -1,3 +1,4 @@
+# 8:34
 n = int(input())
 num = 1
 plus = 6
