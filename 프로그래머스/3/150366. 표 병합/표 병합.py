@@ -1,3 +1,4 @@
+# +5
 def add(d, a, b):
     s = d.setdefault(a, set())
     s.add(b)
@@ -47,7 +48,6 @@ def solution(commands):
                         if sheet[i][j] == c[1]:
                             sheet[i][j] = c[2]
 
-
         elif query == 'MERGE':
             x1 = int(c[1])
             y1 = int(c[2])
@@ -70,9 +70,7 @@ def solution(commands):
             x = int(c[1])
             y = int(c[2])
             for shell in m.get((x,y),set()):
-                s = set()
-                s.add((x,y))
-                unmerge(shell,s)
+                unmerge(shell,{(x,y)})
             m.get((x,y),set()).clear()
         elif query == 'PRINT':
             x = int(c[1])
