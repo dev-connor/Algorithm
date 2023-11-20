@@ -1,6 +1,8 @@
 import heapq
 import sys
 
+# 59:17
+# 최단 경로
 T = int(input())
 
 for _ in range(T):
@@ -53,26 +55,6 @@ for _ in range(T):
             answer.append(i)
         if b + shortests[1][i] == shortests[0][i]:
             answer.append(i)
-    #
-    # a_min = INF
-    # b_min = INF
-    # for d in destinations:
-    #     a_min = min(a_min,shortests[2][d])
-    #     b_min = min(b_min,shortests[1][d])
-    #
-    # a += a_min
-    # b += b_min
-    #
-    #
-    #
-    # if a > b:
-    #     for i in destinations:
-    #         if shortests[1][i] == b_min:
-    #             answer.append(i)
-    # else: # a 가 최단거리
-    #     for i in destinations:
-    #         if shortests[2][i] == a_min:
-    #             answer.append(i)
 
     answer.sort()
     print(' '.join(map(str, answer)))

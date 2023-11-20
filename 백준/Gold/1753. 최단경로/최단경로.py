@@ -1,6 +1,8 @@
 import heapq
 import sys
 
+# 35:27
+# 최단 경로
 def set(d, a, b):
     d.setdefault(a, 0)
     d[a] = b
@@ -20,14 +22,9 @@ for _ in range(e):
         c = graph[s].get(to)
         if cost < c:
             set(graph[s],to,cost)
-            # d.setdefault(cost)
     else:
         d = graph[s]
         set(d,to,cost)
-        # graph[s].append(d)
-
-    # if cost < graph[s][to]:
-    #     graph[s][to] = cost
 
 def dijkstra(start):
     q = []
