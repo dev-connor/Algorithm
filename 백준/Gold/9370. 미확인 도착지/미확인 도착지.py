@@ -19,7 +19,7 @@ for _ in range(T):
     for _ in range(m):
         start, to, cost = map(int, input().split())
         edges[start].append((to, cost)) # start 에서 to 로 가는 비용이 cost
-        edges[to].append((start, cost)) # start 에서 to 로 가는 비용이 cost
+        edges[to].append((start, cost)) # to 에서 start 로 가는 비용이 cost
 
     for _ in range(t):
         destination = int(input())

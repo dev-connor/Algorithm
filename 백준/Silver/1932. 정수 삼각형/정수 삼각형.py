@@ -1,3 +1,5 @@
+# 24:08
+# DP
 n = int(input())
 dp = [[0] * (3*n+2) for _ in range(2*n)]
 

@@ -1,5 +1,7 @@
 import sys
 
+# 6:10
+# 최단 경로
 v,e = map(int, input().split())
 
 input = sys.stdin.readline

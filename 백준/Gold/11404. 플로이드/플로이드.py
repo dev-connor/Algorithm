@@ -1,3 +1,5 @@
+# 20:41
+# 최단 경로
 v = int(input())
 
 INF = int(1e9)

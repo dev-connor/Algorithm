@@ -1,3 +1,5 @@
+# 13:54
+# DP
 n = int(input())
 array = list(map(int, input().split()))
 
