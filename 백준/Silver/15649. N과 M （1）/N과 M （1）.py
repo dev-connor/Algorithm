@@ -2,7 +2,7 @@ n,m = map(int, input().split())
 visited = [False] * (n+1)
 nums = []
 
-def dfs(visited):
+def dfs():
     cnt = len(nums)
 
     if cnt == m:
@@ -13,8 +13,8 @@ def dfs(visited):
         if not visited[i]:
             nums.append(i)
             visited[i] = True
-            dfs(visited)
+            dfs()
             nums.pop()
             visited[i] = False
 
-dfs(visited)
+dfs()
