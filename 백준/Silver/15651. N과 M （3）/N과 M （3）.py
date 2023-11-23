@@ -1,5 +1,4 @@
 n,m = map(int, input().split())
-visited = [False] * (n+1)
 nums = []
 
 def dfs():
@@ -10,8 +9,8 @@ def dfs():
         return
 
     for i in range(1,n+1):
-            nums.append(i)
-            dfs()
-            nums.pop()
+        nums.append(i)
+        dfs()
+        nums.pop()
 
 dfs()

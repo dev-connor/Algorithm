@@ -1,15 +1,16 @@
 n,m = map(int, input().split())
+nums = []
 
-def dfs(arr, now):
-    cnt = len(arr)
+def dfs(now):
+    cnt = len(nums)
 
     if cnt == m:
-        print(' '.join(map(str, arr)))
+        print(' '.join(map(str, nums)))
         return
 
     for i in range(now, n + 1):
-        arr.append(i)
-        dfs(arr,i)
-        arr.pop()
+        nums.append(i)
+        dfs(i)
+        nums.pop()
 
-dfs([],1)
+dfs(1)
