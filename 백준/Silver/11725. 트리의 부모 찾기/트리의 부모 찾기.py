@@ -1,3 +1,4 @@
+# 46:05
 from collections import deque
 
 e = int(input())
@@ -22,14 +23,6 @@ def bfs(start):
             if not visited[i]:
                 q.append((i,v))
                 visited[i] = True
-
-# def dfs(n, before):
-#     visited[n] = True
-#     parent[n] = before
-#
-#     for i in edges[n]:
-#         if not visited[i]:
-#             dfs(i, n)
 
 bfs(1)
 for p in parent[2:]:

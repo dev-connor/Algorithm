@@ -1,3 +1,4 @@
+# 15:20
 import itertools
 
 n,m = map(int, input().split())
@@ -20,14 +21,14 @@ def manhattan(pos1, pos2):
 
 answer = INF
 for p in picked:
-    d_sum = 0
+    city_dist = 0
 
     for house in houses:
-        d_min = INF
+        chicken_dist = INF
         for chicken in p:
-            d_min = min(d_min, manhattan(chicken, house))
+            chicken_dist = min(chicken_dist, manhattan(chicken, house))
 
-        d_sum += d_min # 그 집의 치킨거리
-    answer = min(answer, d_sum)
+        city_dist += chicken_dist # 그 집의 치킨거리
+    answer = min(answer, city_dist)
 
 print(answer)
