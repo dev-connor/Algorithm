@@ -1,13 +1,17 @@
-N, M = map(int, input().split())
-lst = []
+n,m = map(int, input().split())
+visited = [False] * (n+1)
+nums = []
 
-def dfs(cnt):
-    if cnt == M:  # 탈출 조건
-        print(' '.join(map(str, lst)))
+def dfs():
+    cnt = len(nums)
+
+    if cnt == m:
+        print(' '.join(map(str, nums)))
         return
 
-    for i in range(1, N+1):
-        lst.append(i)
-        dfs(cnt+1)
-        lst.pop()
-dfs(0)
+    for i in range(1,n+1):
+            nums.append(i)
+            dfs()
+            nums.pop()
+
+dfs()
