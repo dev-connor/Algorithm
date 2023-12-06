@@ -1,3 +1,5 @@
+# 28:37
+# 투 포인터
 import heapq
 
 n = int(input())

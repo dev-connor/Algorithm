@@ -1,3 +1,5 @@
+# 11:11
+# 투 포인터
 import math
 
 n = int(input())

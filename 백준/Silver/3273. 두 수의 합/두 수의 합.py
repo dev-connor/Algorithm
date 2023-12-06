@@ -1,3 +1,5 @@
+# 21:03
+# 투 포인터
 n = int(input())
 nums = list(map(int, input().split()))
 x = int(input())
