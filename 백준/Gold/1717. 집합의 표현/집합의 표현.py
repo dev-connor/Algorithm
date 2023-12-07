@@ -17,15 +17,12 @@ input = sys.stdin.readline
 
 n,m = map(int, input().split())
 parent = [i for i in range(n+1)]
-sys.setrecursionlimit(100000000)
+sys.setrecursionlimit(int(10e8))
 
 for _ in range(m):
     oper,a,b = map(int, input().split())
 
     if oper == 0:
-        if a == b:
-            continue
-
         union_parent(parent,a,b)
     else:
         if find_parent(parent,a) == find_parent(parent,b):
