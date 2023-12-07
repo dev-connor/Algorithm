@@ -1,3 +1,4 @@
+# 18:28
 import sys
 
 def find_parent(parent, x):
