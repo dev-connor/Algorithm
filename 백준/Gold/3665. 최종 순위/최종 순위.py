@@ -1,3 +1,5 @@
+# 14:20
+# 위상정렬
 from collections import deque
 
 t = int(input())

@@ -1,3 +1,5 @@
+# 19:34
+# 위상정렬
 import heapq
 
 n,m = map(int, input().split())
@@ -5,7 +7,6 @@ n,m = map(int, input().split())
 answer = []
 graph = [[] for i in range(n+1)]
 indegree = [0] * (n+1)
-visited = [False] * (n+1)
 
 for _ in range(m):
     cur, next = map(int, input().split())
@@ -27,7 +28,7 @@ def topology_sort():
             indegree[i] -= 1
             if indegree[i] == 0:
                 heapq.heappush(q,i)
-    else:
-        print(' '.join(map(str, answer)))
+
+    print(' '.join(map(str, answer)))
 
 topology_sort()

@@ -1,3 +1,5 @@
+# 14:40
+# 위상정렬
 from collections import deque
 
 n,m = map(int, input().split())
