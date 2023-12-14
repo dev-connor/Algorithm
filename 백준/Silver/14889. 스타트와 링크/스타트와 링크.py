@@ -1,11 +1,10 @@
+# 15:57
 import itertools
 
 n = int(input())
 stats = []
 for i in range(n):
     stats.append(list(map(int, input().split())))
-
-nums = []
 
 all_m = {i for i in range(n)}
 picked = list(itertools.combinations(all_m,n//2))

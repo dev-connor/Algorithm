@@ -1,3 +1,4 @@
+# 22:37
 n = int(input())
 points = [0]*n
 for i in range(n):
