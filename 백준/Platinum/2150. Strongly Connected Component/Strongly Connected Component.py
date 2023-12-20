@@ -37,7 +37,7 @@ def dfs(cur):
                 break
         scc.sort()
         scc.append(-1)
-        answer.append(tuple(scc))
+        answer.append(scc)
     return parent
 
 
