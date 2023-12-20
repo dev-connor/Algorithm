@@ -1,3 +1,4 @@
+# 3:01
 import bisect
 
 n = int(input())
