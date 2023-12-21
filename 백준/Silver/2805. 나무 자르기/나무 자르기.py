@@ -1,3 +1,4 @@
+# 5:49
 n,m = map(int, input().split())
 trees = list(map(int, input().split()))
 
@@ -12,8 +13,8 @@ while start <= end:
     for x in trees:
         if mid <= x:
             total += x - mid
-        if total >= m:
-            break
+            if total >= m:
+                break
 
     if total < m:
         end = mid - 1

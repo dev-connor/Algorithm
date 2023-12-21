@@ -6,10 +6,10 @@ while x > sum_v:
     d += 1
     sum_v += d
 
-p = sum_v - x + 1
-s = d + 1 - p
+den = sum_v - x + 1
+num = d + 1 - den
 
 if d % 2 == 0:
-    print(f'{s}/{p}')
+    print(f'{num}/{den}')
 else:
-    print(f'{p}/{s}')
+    print(f'{den}/{num}')

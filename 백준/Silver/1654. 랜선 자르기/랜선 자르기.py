@@ -1,3 +1,4 @@
+# 8:24
 k,n = map(int, input().split())
 nums = [0] * k
 for i in range(k):
