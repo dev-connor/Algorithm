@@ -1,23 +1,25 @@
+# 45:39
 n = int(input())
-array = list(map(int, input().split()))
+nums = list(map(int, input().split()))
 
-dp = [1] * n
-dp2 = [0] * n
+asc = [1] * n
+desc = [0] * n
 
 for i in range(1,n):
 	for j in range(0,i):
-		left = array[j]
-		right = array[i]
+		left = nums[j]
+		right = nums[i]
 		if left < right:
-			dp[i] = max(dp[i], dp[j] + 1)
+			asc[i] = max(asc[i], asc[j] + 1)
 
-array.reverse()
+nums.reverse()
 for i in range(1,n):
 	for j in range(0,i):
-		left = array[j]
-		right = array[i]
+		left = nums[j]
+		right = nums[i]
 		if left < right:
-			dp2[i] = max(dp2[i], dp2[j] + 1)
-dp2.reverse()
-newArr = [x + y for x,y in zip(dp, dp2)]
-print(max(newArr))
+			desc[i] = max(desc[i], desc[j] + 1)
+desc.reverse()
+sum_array = [x + y for x, y in zip(asc, desc)]
+
+print(max(sum_array))
