@@ -7,7 +7,7 @@ class Solution:
             dp[1][i] = 1
 
         for dice in range(2,n+1):
-            for sum in range(0,target+1):
+            for sum in range(1,target+1):
                 for face in range(1,k+1):
                     if sum-face <= 0:
                         break
