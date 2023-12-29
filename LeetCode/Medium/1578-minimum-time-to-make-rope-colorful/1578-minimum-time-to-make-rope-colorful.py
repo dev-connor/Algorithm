@@ -1,3 +1,4 @@
+# 30:51
 import heapq
 from typing import List
 
@@ -5,8 +6,8 @@ class Solution:
     def minCost(self, colors: str, neededTime: List[int]) -> int:
         answer = 0
         n = len(colors)
-
         h = []
+
         for i in range(n):
             if i+1 < n and colors[i] == colors[i+1]:
                 if not h:

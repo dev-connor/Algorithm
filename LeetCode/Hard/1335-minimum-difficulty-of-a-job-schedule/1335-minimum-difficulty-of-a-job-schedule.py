@@ -1,3 +1,4 @@
+# 1:02:33
 from typing import List
 
 class Solution:
@@ -16,6 +17,5 @@ class Solution:
             for j in range(n):
                 for k in range(j):
                     dp[i][j] = min(dp[i][j],dp[i-1][k]+max(jobDifficulty[k+1:j+1]))
-
 
         return dp[-1][-1]
