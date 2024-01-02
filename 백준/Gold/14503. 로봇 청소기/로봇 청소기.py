@@ -1,3 +1,4 @@
+# 32:05
 n,m = map(int, input().split())
 r,c,d = map(int, input().split())
 
@@ -12,7 +13,6 @@ dx = [-1,0,1,0] # 북동남서
 dy = [0,1,0,-1]
 
 while True:
-    find = False
     if room[r][c] == 0 and not clean[r][c]:
         clean[r][c] = True
         answer += 1
