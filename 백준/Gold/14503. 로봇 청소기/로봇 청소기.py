@@ -11,43 +11,25 @@ answer = 0
 dx = [-1,0,1,0] # 북동남서
 dy = [0,1,0,-1]
 
-def back(n):
-    if n % 2 == 0:
-        return 2-n
-    else:
-        return 4-n
-
-def rotate(n):
-    if n == 0:
-        return 3
-    else:
-        return n-1
-
 while True:
     find = False
     if room[r][c] == 0 and not clean[r][c]:
         clean[r][c] = True
         answer += 1
 
-    for i in range(4):
-        nx = r + dx[i]
-        ny = c + dy[i]
+    for _ in range(4):
+        d = (d-1)%4 # 반시계 방향으로 회전
+        nx = r + dx[d]
+        ny = c + dy[d]
 
         if room[nx][ny] == 0 and not clean[nx][ny]:
-            find = True
-
-    if find:
-        while True:
-            d = rotate(d)
-            nx = r + dx[d]
-            ny = c + dy[d]
-            if room[nx][ny] == 0 and not clean[nx][ny]:
-                r = nx
-                c = ny
-                break
+            r = nx
+            c = ny
+            break
     else:
-        nx = r + dx[back(d)]
-        ny = c + dy[back(d)]
+        back = (d+2)%4
+        nx = r + dx[back]
+        ny = c + dy[back]
         if room[nx][ny] != 1:
             r = nx
             c = ny
