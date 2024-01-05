@@ -1,3 +1,4 @@
+# 16:07
 n,m = map(int, input().split())
 
 def find_parent(parent, x):

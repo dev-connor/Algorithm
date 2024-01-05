@@ -11,7 +11,6 @@ def divncon(r,c,size):
     color = -1
 
     for i in range(r,r+size):
-        f = False
         for j in range(c,c+size):
             if color == -1:
                 color = paper[i][j]
@@ -22,15 +21,11 @@ def divncon(r,c,size):
                     divncon(r,c+mid,mid)
                     divncon(r+mid,c,mid)
                     divncon(r+mid,c+mid,mid)
-                    f = True
-                    break
-        if f:
-            break
+                    return
+    if color == 1:
+        blue += 1
     else:
-        if color == 1:
-            blue += 1
-        else:
-            white += 1
+        white += 1
 
 divncon(0,0,n)
 print(white)

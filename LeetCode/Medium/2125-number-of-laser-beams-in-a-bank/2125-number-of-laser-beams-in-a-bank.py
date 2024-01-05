@@ -1,3 +1,4 @@
+# 8:41
 from typing import List
 
 class Solution:
