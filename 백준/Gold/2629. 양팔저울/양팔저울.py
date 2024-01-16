@@ -1,3 +1,4 @@
+# 39:31
 n = int(input())
 weights = [0]+list(map(int, input().split()))
 m = int(input())
