@@ -27,8 +27,6 @@ for _ in range(t):
             x2 -= 1
             if (alice_win and alice_left) or (not alice_win and not alice_left):
                 y2 += move(y2,'R')
-            elif not alice_win and y1 == y2:
-                pass
             else:
                 y2 += move(y2,'L')
 
