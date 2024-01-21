@@ -2,8 +2,8 @@ from typing import List
 
 class Solution:
     def rob(self, nums: List[int]) -> int:
-        if len(nums) == 1: return nums[0]
         n = len(nums)
+        if n == 1: return nums[0]
         dp = [0]*n
         dp[0],dp[1] = nums[0],max(nums[:2])
 
