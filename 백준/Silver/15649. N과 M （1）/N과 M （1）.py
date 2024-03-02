@@ -1,20 +1,19 @@
-n,m = map(int, input().split())
-visited = [False] * (n+1)
+n,cnt = map(int,input().split())
 nums = []
+visited = set()
 
 def dfs():
-    cnt = len(nums)
-
-    if cnt == m:
-        print(' '.join(map(str, nums)))
+    if len(nums) == cnt:
+        ans = ' '.join(map(str, nums))
+        print(ans)
         return
-
-    for i in range(1,n+1):
-        if not visited[i]:
+    
+    for i in range(1, n+1):
+        if i not in visited:
             nums.append(i)
-            visited[i] = True
+            visited.add(i)
             dfs()
             nums.pop()
-            visited[i] = False
+            visited.remove(i)
 
 dfs()
