@@ -1,16 +1,15 @@
-n,m = map(int, input().split())
+n,cnt = map(int,input().split())
 nums = []
 
 def dfs():
-    cnt = len(nums)
-
-    if cnt == m:
-        print(' '.join(map(str, nums)))
+    if len(nums) == cnt:
+        ans = ' '.join(map(str, nums))
+        print(ans)
         return
-
-    for i in range(1,n+1):
+    
+    for i in range(1, n+1):
         nums.append(i)
         dfs()
         nums.pop()
-
+        
 dfs()
